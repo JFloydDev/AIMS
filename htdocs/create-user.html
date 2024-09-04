@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Augustine Catholic School Registration</title>
+    <link rel="stylesheet" href="css/createuser.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="logo">
+                <img src="css/img/School-Logo.png" alt="St. Augustine Catholic School Logo">
+            </div>
+            <h1>ST. Augustine Catholic School</h1>
+            <p>WELCOME TO ST. AUGUSTINE CATHOLIC SCHOOL REGISTRATION</p>
+            <form action="create-user.php" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <div class="input-container">
+                            <i class="fas fa-user icon"></i>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="graduation-year">Graduation Year</label>
+                        <div class="input-container">
+                            <i class="fas fa-calendar-alt icon"></i>
+                            <input type="text" id="graduation-year" name="graduation-year" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="educational-background">Educational Background</label>
+                        <div class="input-container">
+                            <i class="fas fa-graduation-cap icon"></i>
+                            <input type="text" id="educational-background" name="educational-background" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="professional-history">Professional History</label>
+                        <div class="input-container">
+                            <i class="fas fa-briefcase icon"></i>
+                            <input type="text" id="professional-history" name="professional-history" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-container">
+                            <i class="fas fa-lock icon"></i>
+                            <input type="password" id="password" name="password" required>
+                            <i class="fas fa-eye toggle-password" onclick="togglePasswordVisibility('password', this)"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <div class="input-container">
+                            <i class="fas fa-lock icon"></i>
+                            <input type="password" id="confirm-password" name="confirm-password" required>
+                            <i class="fas fa-eye toggle-password" onclick="togglePasswordVisibility('confirm-password', this)"></i>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="register-button">Register</button>
+            </form>
+            <p class="sign-in">Already have an Account? <a href="login.html">Sign In Here</a></p>
+        </div>
+    </div>
+    <script>
+        function togglePasswordVisibility(id, element) {
+            const input = document.getElementById(id);
+            if (input.type === "password") {
+                input.type = "text";
+                element.classList.remove("fa-eye");
+                element.classList.add("fa-eye-slash");
+            } else {
+                input.type = "password";
+                element.classList.remove("fa-eye-slash");
+                element.classList.add("fa-eye");
+            }
+        }
+    </script>
+</body>
+</html>

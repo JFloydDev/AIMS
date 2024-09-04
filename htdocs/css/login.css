@@ -1,0 +1,166 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('img/IMG_0972.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.header img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+    font-weight: bold; 
+}
+
+.header p {
+    margin: 10px 0 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+    text-align: left; 
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    cursor: pointer;
+}
+
+.form-group i.fa-eye {
+    color: #000; 
+}
+
+.form-group .forgot-password {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #007BFF;
+    text-decoration: none;
+    text-align: left; 
+}
+
+.form-group .forgot-password:hover {
+    text-decoration: underline;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d9534f;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+    background-color: #c9302c;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.footer .signup-link {
+    color: #d9534f;
+    text-decoration: none;
+}
+
+.footer .signup-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 100%;
+        padding: 20px; 
+    }
+
+    .header img {
+        max-width: 70px; /* Adjusted size for responsiveness */
+        margin-bottom: 15px;
+    }
+
+    .header h1 {
+        font-size: 18px; 
+    }
+
+    .header p {
+        font-size: 12px; 
+    }
+
+    .form-group input {
+        font-size: 14px; 
+    }
+
+    .form-group button {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; 
+    }
+
+    .header img {
+        max-width: 60px; /* Adjusted size for responsiveness */
+    }
+
+    .header h1 {
+        font-size: 16px; 
+    }
+
+    .header p {
+        font-size: 10px; 
+    }
+
+    .form-group input {
+        font-size: 12px; 
+    }
+
+    .form-group button {
+        font-size: 12px;
+    }
+}
